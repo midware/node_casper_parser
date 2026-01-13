@@ -1,0 +1,1049 @@
+{
+  "contractTypes": {
+    "erc20": {
+      "entrypoints": [
+        {
+          "name": "name",
+          "args": []
+        },
+        {
+          "name": "symbol",
+          "args": []
+        },
+        {
+          "name": "transfer_from",
+          "args": [
+            "owner",
+            "recipient",
+            "amount"
+          ]
+        },
+        {
+          "name": "allowance",
+          "args": [
+            "owner",
+            "spender"
+          ]
+        },
+        {
+          "name": "approve",
+          "args": [
+            "spender",
+            "amount"
+          ]
+        },
+        {
+          "name": "transfer",
+          "args": [
+            "recipient",
+            "amount"
+          ]
+        },
+        {
+          "name": "balance_of",
+          "args": [
+            "address"
+          ]
+        },
+        {
+          "name": "total_supply",
+          "args": []
+        },
+        {
+          "name": "decimals",
+          "args": []
+        }
+      ],
+      "namedkeys": [
+        "name",
+        "symbol",
+        "decimals",
+        "balances",
+        "allowances",
+        "total_supply"
+      ]
+    },
+    "uniswap-erc20": {
+      "entrypoints": [
+        {
+          "name": "transfer",
+          "args": [
+            "recipient",
+            "amount"
+          ]
+        },
+        {
+          "name": "transfer_from",
+          "args": [
+            "owner",
+            "recipient",
+            "amount"
+          ]
+        },
+        {
+          "name": "permit",
+          "args": [
+            "public",
+            "signature",
+            "owner",
+            "spender",
+            "value",
+            "deadline"
+          ]
+        },
+        {
+          "name": "approve",
+          "args": [
+            "spender",
+            "amount"
+          ]
+        },
+        {
+          "name": "balance_of",
+          "args": [
+            "owner"
+          ]
+        },
+        {
+          "name": "nonce",
+          "args": [
+            "owner"
+          ]
+        },
+        {
+          "name": "allowance",
+          "args": [
+            "owner",
+            "spender"
+          ]
+        },
+        {
+          "name": "total_supply",
+          "args": []
+        },
+        {
+          "name": "mint",
+          "args": [
+            "to",
+            "amount"
+          ]
+        },
+        {
+          "name": "burn",
+          "args": [
+            "from",
+            "amount"
+          ]
+        },
+        {
+          "name": "name",
+          "args": []
+        },
+        {
+          "name": "symbol",
+          "args": []
+        },
+        {
+          "name": "increase_allowance",
+          "args": [
+            "spender",
+            "amount"
+          ]
+        },
+        {
+          "name": "decrease_allowance",
+          "args": [
+            "spender",
+            "amount"
+          ]
+        },
+        {
+          "name": "increase_allowance_js_client",
+          "args": [
+            "spender",
+            "amount"
+          ]
+        },
+        {
+          "name": "decrease_allowance_js_client",
+          "args": [
+            "spender",
+            "amount"
+          ]
+        }
+      ],
+      "namedkeys": [
+        "name",
+        "symbol",
+        "decimals",
+        "balances",
+        "allowances",
+        "nonces",
+        "total_supply",
+        "domain_separator",
+        "permit_type_hash"
+      ]
+    },
+    "cep18-token": {
+      "entrypoints": [
+        {
+          "name": "name",
+          "args": []
+        },
+        {
+          "name": "symbol",
+          "args": []
+        },
+        {
+          "name": "transfer_from",
+          "args": [
+            "owner",
+            "recipient",
+            "amount"
+          ]
+        },
+        {
+          "name": "allowance",
+          "args": [
+            "owner",
+            "spender"
+          ]
+        },
+        {
+          "name": "approve",
+          "args": [
+            "spender",
+            "amount"
+          ]
+        },
+        {
+          "name": "transfer",
+          "args": [
+            "recipient",
+            "amount"
+          ]
+        },
+        {
+          "name": "balance_of",
+          "args": [
+            "address"
+          ]
+        },
+        {
+          "name": "total_supply",
+          "args": []
+        },
+        {
+          "name": "decimals",
+          "args": []
+        }
+      ],
+      "namedkeys": [
+        "__events",
+        "__events_ces_version",
+        "__events_length",
+        "__events_schema",
+        "allowances",
+        "balances",
+        "decimals",
+        "events_mode",
+        "global",
+        "name",
+        "package_hash",
+        "security_badges",
+        "symbol",
+        "total_supply",
+        "validator_debt"
+      ]
+    },
+    "account-info": {
+      "entrypoints": [
+        {
+          "name": "burn_one_cspr",
+          "args": []
+        },
+        {
+          "name": "delete_url",
+          "args": []
+        },
+        {
+          "name": "delete_url_for_account",
+          "args": [
+            "account"
+          ]
+        },
+        {
+          "name": "disable_admin",
+          "args": [
+            "account"
+          ]
+        },
+        {
+          "name": "get_url",
+          "args": [
+            "account"
+          ]
+        },
+        {
+          "name": "set_cspr_to_burn",
+          "args": [
+            "cspr_to_burn"
+          ]
+        },
+        {
+          "name": "set_url",
+          "args": [
+            "url"
+          ]
+        },
+        {
+          "name": "set_url_for_account",
+          "args": [
+            "account",
+            "url"
+          ]
+        }
+      ],
+      "namedkeys": [
+        "account-info-admins",
+        "account-info-urls",
+        "admins_count",
+        "cspr_to_burn"
+      ]
+    },
+    "auction": {
+      "entrypoints": [
+        {
+          "name": "activate_bid",
+          "args": [
+            "validator_public_key"
+          ]
+        },
+        {
+          "name": "add_bid",
+          "args": [
+            "public_key",
+            "delegation_rate",
+            "amount"
+          ]
+        },
+        {
+          "name": "delegate",
+          "args": [
+            "delegator",
+            "validator",
+            "amount"
+          ]
+        },
+        {
+          "name": "distribute",
+          "args": [
+            "reward_factors"
+          ]
+        },
+        {
+          "name": "get_era_validators",
+          "args": []
+        },
+        {
+          "name": "read_era_id",
+          "args": []
+        },
+        {
+          "name": "run_auction",
+          "args": [
+            "era_end_timestamp_millis"
+          ]
+        },
+        {
+          "name": "slash",
+          "args": []
+        },
+        {
+          "name": "undelegate",
+          "args": [
+            "delegator",
+            "validator",
+            "amount"
+          ]
+        },
+        {
+          "name": "withdraw_bid",
+          "args": [
+            "public_key",
+            "amount"
+          ]
+        }
+      ],
+      "namedkeys": [
+        "auction_delay",
+        "era_end_timestamp_millis",
+        "era_id",
+        "locked_funds_period",
+        "seigniorage_recipients_snapshot",
+        "unbonding_delay",
+        "validator_slots"
+      ]
+    },
+    "faucet": {
+      "entrypoints": [
+        {
+          "name": "call_faucet",
+          "args": [
+            "target",
+            "amount"
+          ]
+        }
+      ],
+      "namedkeys": []
+    },
+    "cep47": {
+      "entrypoints": [
+        {
+          "name": "name",
+          "args": []
+        },
+        {
+          "name": "symbol",
+          "args": []
+        },
+        {
+          "name": "meta",
+          "args": []
+        },
+        {
+          "name": "total_supply",
+          "args": []
+        },
+        {
+          "name": "balance_of",
+          "args": [
+            "owner"
+          ]
+        },
+        {
+          "name": "owner_of",
+          "args": [
+            "token_id"
+          ]
+        },
+        {
+          "name": "token_meta",
+          "args": [
+            "token_id"
+          ]
+        },
+        {
+          "name": "update_token_meta",
+          "args": [
+            "token_id",
+            "token_meta"
+          ]
+        },
+        {
+          "name": "mint",
+          "args": [
+            "recipient",
+            "token_ids",
+            "token_metas"
+          ]
+        },
+        {
+          "name": "mint_copies",
+          "args": [
+            "recipient",
+            "token_ids",
+            "token_meta",
+            "count"
+          ]
+        },
+        {
+          "name": "burn",
+          "args": [
+            "owner",
+            "token_ids"
+          ]
+        },
+        {
+          "name": "transfer",
+          "args": [
+            "recipient",
+            "token_ids"
+          ]
+        },
+        {
+          "name": "transfer_from",
+          "args": [
+            "sender",
+            "recipient",
+            "token_ids"
+          ]
+        },
+        {
+          "name": "approve",
+          "args": [
+            "spender",
+            "token_ids"
+          ]
+        },
+        {
+          "name": "get_approved",
+          "args": [
+            "owner",
+            "token_id"
+          ]
+        },
+        {
+          "name": "get_token_by_index",
+          "args": [
+            "owner",
+            "index"
+          ]
+        }
+      ],
+      "namedkeys": [
+        "name",
+        "symbol",
+        "balances",
+        "meta",
+        "total_supply",
+        "owners",
+        "owned_tokens_by_index",
+        "owned_indexes_by_token",
+        "balances",
+        "metadata",
+        "allowances"
+      ]
+    },
+    "cep78": {
+      "entrypoints": [
+        {
+          "name": "approve",
+          "args": [
+            "operator"
+          ]
+        },
+        {
+          "name": "balance_of",
+          "args": [
+            "token_owner"
+          ]
+        },
+        {
+          "name": "burn",
+          "args": []
+        },
+        {
+          "name": "get_approved",
+          "args": []
+        },
+        {
+          "name": "init",
+          "args": [
+            "collection_name",
+            "collection_symbol",
+            "total_token_supply",
+            "allow_minting",
+            "minting_mode",
+            "ownership_mode",
+            "nft_kind",
+            "holder_mode",
+            "whitelist_mode",
+            "contract_whitelist",
+            "json_schema",
+            "receipt_name",
+            "identifier_mode",
+            "burn_mode"
+          ]
+        },
+        {
+          "name": "metadata",
+          "args": []
+        },
+        {
+          "name": "mint",
+          "args": [
+            "token_owner",
+            "token_meta_data"
+          ]
+        },
+        {
+          "name": "owner_of",
+          "args": []
+        },
+        {
+          "name": "set_approval_for_all",
+          "args": [
+            "token_owner",
+            "approve_all",
+            "operator"
+          ]
+        },
+        {
+          "name": "set_token_metadata",
+          "args": [
+            "token_meta_data"
+          ]
+        },
+        {
+          "name": "set_variables",
+          "args": [
+            "allow_minting",
+            "contract_whitelist"
+          ]
+        },
+        {
+          "name": "transfer",
+          "args": [
+            "source_key",
+            "target_key"
+          ]
+        }
+      ],
+      "namedkeys": [
+        "allow_minting",
+        "balances",
+        "burn_mode",
+        "burnt_tokens",
+        "collection_name",
+        "collection_symbol",
+        "contract_whitelist",
+        "holder_mode",
+        "identifier_mode",
+        "installer",
+        "json_schema",
+        "metadata_cep78",
+        "metadata_custom_validated",
+        "metadata_mutability",
+        "metadata_nft721",
+        "metadata_raw",
+        "minting_mode",
+        "nft_kind",
+        "nft_metadata_kind",
+        "number_of_minted_tokens",
+        "operator",
+        "owned_tokens",
+        "ownership_mode",
+        "receipt_name",
+        "token_issuers",
+        "token_owners",
+        "total_token_supply",
+        "whitelist_mode"
+      ]
+    },
+    "casper-private-auction": {
+      "entrypoints": [
+        {
+          "name": "bid",
+          "args": [
+            "bid",
+            "bid_purse"
+          ]
+        },
+        {
+          "name": "cancel_bid",
+          "args": []
+        },
+        {
+          "name": "finalize",
+          "args": []
+        },
+        {
+          "name": "cancel_auction",
+          "args": []
+        },
+        {
+          "name": "get_bid",
+          "args": []
+        },
+        {
+          "name": "init",
+          "args": []
+        }
+      ],
+      "namedkeys": [
+        "token_owner",
+        "beneficiary_account",
+        "token_contract_hash",
+        "kyc_package_hash",
+        "english_format",
+        "token_id",
+        "start_time",
+        "cancellation_time",
+        "end_time",
+        "starting_price",
+        "reserve_price",
+        "winning_bid",
+        "current_winner",
+        "finalized",
+        "auction_events_count",
+        "commissions",
+        "bidder_count_cap",
+        "auction_timer_extension",
+        "minimum_bid_step",
+        "marketplace_commission",
+        "marketplace_account",
+        "auction_purse"
+      ]
+    },
+    "Defi": { // Friendly Market DeFi contract
+      "entrypoints": [
+        {
+          "name": "add_liquidity",
+          "args": [
+            "token_a",
+            "token_b",
+            "amount_a_desired",
+            "amount_b_desired",
+            "amount_a_min",
+            "amount_b_min",
+            "to",
+            "deadline"
+          ]
+        },
+        {
+          "name": "add_liquidity_cspr",
+          "args": [
+            "token",
+            "amount_token_desired",
+            "amount_cspr_desired",
+            "amount_token_min",
+            "amount_cspr_min",
+            "deadline",
+            "src_purse",
+            "target_account"
+          ]
+        },
+        {
+          "name": "factory",
+          "args": []
+        },
+        {
+          "name": "get_amount_in",
+          "args": [
+            "amount_out",
+            "reserve_in",
+            "reserve_out"
+          ]
+        },
+        {
+          "name": "get_amount_out",
+          "args": [
+            "amount_in",
+            "reserve_in",
+            "reserve_out"
+          ]
+        },
+        {
+          "name": "get_amounts_in",
+          "args": [
+            "amount_out",
+            "path"
+          ]
+        },
+        {
+          "name": "get_amounts_out",
+          "args": [
+            "amount_in",
+            "path"
+          ]
+        },
+        {
+          "name": "quote",
+          "args": [
+            "amount_a",
+            "reserve_a",
+            "reserve_b"
+          ]
+        },
+        {
+          "name": "remove_liquidity",
+          "args": [
+            "token_a",
+            "token_b",
+            "liquidity",
+            "amount_a_min",
+            "amount_b_min",
+            "to",
+            "deadline"
+          ]
+        },
+        {
+          "name": "remove_liquidity_cspr",
+          "args": [
+            "token",
+            "liquidity",
+            "amount_token_min",
+            "amount_cspr_min",
+            "to",
+            "deadline",
+            "target_account"
+          ]
+        },
+        {
+          "name": "remove_liquidity_cspr_supporting_fee_on_transfer_tokens",
+          "args": [
+            "token",
+            "liquidity",
+            "amount_token_min",
+            "amount_cspr_min",
+            "to",
+            "deadline",
+            "target_account"
+          ]
+        },
+        {
+          "name": "remove_liquidity_cspr_with_permit",
+          "args": [
+            "token",
+            "liquidity",
+            "amount_token_min",
+            "amount_cspr_min",
+            "to",
+            "deadline",
+            "approve_max",
+            "r",
+            "s",
+            "owner_pubkey"
+          ]
+        },
+        {
+          "name": "remove_liquidity_cspr_with_permit_supporting_fee_on_transfer_tokens",
+          "args": [
+            "token",
+            "liquidity",
+            "amount_token_min",
+            "amount_cspr_min",
+            "to",
+            "deadline",
+            "approve_max",
+            "r",
+            "s",
+            "owner_pubkey"
+          ]
+        },
+        {
+          "name": "remove_liquidity_with_permit",
+          "args": [
+            "token_a",
+            "token_b",
+            "liquidity",
+            "amount_a_min",
+            "amount_b_min",
+            "to",
+            "deadline",
+            "approve_max",
+            "r",
+            "s",
+            "owner_pubkey"
+          ]
+        },
+        {
+          "name": "swap_cspr_for_exact_tokens",
+          "args": [
+            "amount_out",
+            "amount_in_max",
+            "path",
+            "to",
+            "deadline",
+            "src_purse",
+            "target_account"
+          ]
+        },
+        {
+          "name": "swap_exact_cspr_for_tokens",
+          "args": [
+            "amount_in",
+            "amount_out_min",
+            "path",
+            "to",
+            "deadline",
+            "src_purse"
+          ]
+        },
+        {
+          "name": "swap_exact_cspr_for_tokens_supporting_fee_on_transfer_tokens",
+          "args": [
+            "amount_in",
+            "amount_out_min",
+            "path",
+            "to",
+            "deadline",
+            "src_purse"
+          ]
+        },
+        {
+          "name": "swap_exact_tokens_for_cspr",
+          "args": [
+            "amount_in",
+            "amount_out_min",
+            "path",
+            "target_account",
+            "deadline"
+          ]
+        },
+        {
+          "name": "swap_exact_tokens_for_cspr_supporting_fee_on_transfer_tokens",
+          "args": [
+            "amount_in",
+            "amount_out_min",
+            "path",
+            "deadline",
+            "target_account"
+          ]
+        },
+        {
+          "name": "swap_exact_tokens_for_tokens",
+          "args": [
+            "amount_in",
+            "amount_out_min",
+            "path",
+            "to",
+            "deadline"
+          ]
+        },
+        {
+          "name": "swap_exact_tokens_for_tokens_supporting_fee_on_transfer_tokens",
+          "args": [
+            "amount_in",
+            "amount_out_min",
+            "path",
+            "to",
+            "deadline"
+          ]
+        },
+        {
+          "name": "swap_tokens_for_exact_cspr",
+          "args": [
+            "amount_out",
+            "amount_in_max",
+            "path",
+            "target_account",
+            "deadline"
+          ]
+        },
+        {
+          "name": "swap_tokens_for_exact_tokens",
+          "args": [
+            "amount_out",
+            "amount_in_max",
+            "path",
+            "to",
+            "deadline"
+          ]
+        },
+        {
+          "name": "update_factory",
+          "args": [
+            "factory"
+          ]
+        },
+        {
+          "name": "wcspr",
+          "args": []
+        }
+      ],
+      "namedkeys": [
+        "contract_purse",
+        "global"
+      ]
+    }
+  },
+    "moduleBytes": {
+        "faucet": {
+            "strictArgs": true,
+            "args": [
+                "target",
+                "amount"
+            ],
+            "from": "018afa98ca4be12d613617f7339a2d576950a2f9a92102ca4d6508ee31b54d2c02"
+        },
+        "stackingOperation": {
+            "strictArgs": true,
+            "args": [
+                "delegator",
+                "validator",
+                "amount"
+            ]
+        },
+        "addBid": {
+            "strictArgs": true,
+            "args": [
+                "public_key",
+                "amount",
+                "delegation_rate"
+            ]
+        },
+        "withdraw_bid": {
+            "strictArgs": true,
+            "args": [
+                "public_key",
+                "amount"
+            ]
+        },
+        "activateBid": {
+            "strictArgs": true,
+            "args": [
+                "validator_public_key"
+            ]
+        },
+        "keyManagement": {
+            "strictArgs": true,
+            "args": [
+                "action",
+                "deployment_thereshold",
+                "key_management_threshold"
+            ]
+        },
+        "keyWeight": {
+            "strictArgs": true,
+            "args": [
+                "action",
+                "account",
+                "weight"
+            ]
+        },
+        "keyManagementThreshold": {
+            "strictArgs": true,
+            "args": [
+                "action",
+                "weight"
+            ]
+        },
+        "simpleTransfer": {
+            "strictArgs": true,
+            "args": [
+                "target",
+                "amount"
+            ]
+        },
+        "erc20": {
+            "strictArgs": true,
+            "args": [
+                "name",
+                "symbol",
+                "total_supply",
+                "decimals"
+            ]
+        },
+        "rengoERC20": {
+            "strictArgs": true,
+            "args": [
+                "name",
+                "symbol",
+                "initial_supply",
+                "decimals",
+                "contract_name"
+            ]
+        },
+        "nftCollection": {
+            "strictArgs": true,
+            "args": [
+                "name",
+                "symbol",
+                "contract_name",
+                "meta"
+            ]
+        }
+    }
+}
